@@ -1,0 +1,58 @@
+.btn {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: .2rem;
+    background: #72B01D;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  
+  .btn:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .btn-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgb(12, 173, 26) 10.8%,
+      #5ddd1d 94.3%
+    );
+    transition: all 0.475s;
+  }
+  
+
+  /* Centrar  botones */
+
+.container-btn{
+    display: flex;
+    justify-content: center;
+  }
+
+  .nuestro-menu, .nuestro-servicio, .galeria-evento{
+    padding-top: 35px;
+  }
+
+  .galeria-evento > .container-btn> .btn{
+    margin-top: 30px;
+  }
+
+ 
